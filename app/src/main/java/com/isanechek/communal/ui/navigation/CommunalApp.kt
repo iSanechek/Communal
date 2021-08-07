@@ -11,7 +11,6 @@ import com.isanechek.communal.ui.theme.CommunalTheme
 @Composable
 fun CommunalApp() {
     val navController = rememberNavController()
-
     CommunalTheme {
         NavHost(navController = navController, startDestination = Screens.PaymentsList.name) {
             composable(route = Screens.PaymentsList.name) {
